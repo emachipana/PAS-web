@@ -20,7 +20,7 @@ const currentPath = Astro.url.pathname;
 		<title>{title}</title>
 	</head>
 	<body>
-    <Navbar path={currentPath} />
+    <Navbar path={currentPath} client:only="react" />
     <main>
       <slot />
     </main>
