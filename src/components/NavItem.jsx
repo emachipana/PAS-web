@@ -2,7 +2,7 @@ import { forwardRef } from "react";
 import { FaAngleDown } from "react-icons/fa6";
 
 const NavItem = forwardRef((props, ref) => {
-  const { path, to, children, isdropbutton } = props;
+  const { path, to, children, isdropbutton, withlogo = true } = props;
   const isActive = isdropbutton ? path.includes(to) : (to === path);
   const className = `font-semibold text-base ${isActive ? "text-blue-500" : "text-zinc-600"} cursor-pointer transition duration-300 hover:text-blue-500`;
 
@@ -14,7 +14,11 @@ const NavItem = forwardRef((props, ref) => {
         {...props}
       >
         <p>{ children }</p>
-        <FaAngleDown size={18} />
+        {
+          withlogo
+          &&
+          <FaAngleDown size={16} />
+        }
       </div>
     : <a
         ref={ref}
