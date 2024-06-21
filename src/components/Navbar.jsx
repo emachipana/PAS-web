@@ -12,7 +12,7 @@ function Navbar({ path }) {
 
   return (
     <>
-      <div className="w-full h-[98px] sticky top-0 shadow-md">
+      <div className="w-full h-[98px] sticky top-0 shadow-md z-30">
         <section className="h-[30px] bg-primary flex items-center justify-end gap-4 px-2 py-1 text-white">
           <div className="flex items-center justify-center gap-1">
             <IoMdMail size={15} />
@@ -23,7 +23,7 @@ function Navbar({ path }) {
             <p className="font-medium text-sm">+51 999888777</p>
           </div>
         </section>
-        <nav className="w-full flex items-center justify-between h-[68px] lg:px-14 px-4">
+        <nav className="w-full flex items-center justify-between h-[68px] lg:px-14 px-4 bg-white">
           <h1 className="font-bold text-5xl text-primary">V<span className="text-secondary">A</span></h1>
           <div className="custom:flex hidden items-center justify-center gap-14">
             <NavItem

@@ -37,7 +37,7 @@ function AsideMenu({ isOpen, setIsOpen, path }) {
         <NavItem 
           to="/servicios"
           path={path}
-          isdropbutton={true}
+          isdropbutton
           withlogo={false}
         >
           Servicios
@@ -83,7 +83,7 @@ function AsideMenu({ isOpen, setIsOpen, path }) {
         <NavItem 
           to="/productos"
           path={path}
-          isdropbutton={true}
+          isdropbutton
           withlogo={false}
         >
           Productos

@@ -1,7 +1,32 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import Slider from "../components/Slider";
 ---
 
 <Layout title="Inicio | Proyectos Araujo Saenz">
-
+  <Slider 
+    client:only="react"
+    data={[
+      {
+        image_url: "https://images.pexels.com/photos/2598638/pexels-photo-2598638.jpeg",
+        title: "Mamparas y vidrios",
+        to: "/instalacion-vidrios"
+      },
+      {
+        image_url: "https://coverprime.pe/wp-content/uploads/2023/06/WhatsApp-Image-2023-02-25-at-1.18.37-PM-2.jpeg",
+        title: "Techos de policarbonato",
+        to: "/instalacion-techos-policarbonato"
+      },
+      {
+        image_url: "https://images.pexels.com/photos/7061067/pexels-photo-7061067.jpeg",
+        title: "Puertas de ducha",
+        to: "/instalacion-puertas-duchas"
+      },
+      {
+        image_url: "https://panel.construproductos.com/images/posts/621fc5049d31d.jpg",
+        title: "Construccion en drywall",
+        to: "construccion-drywall"
+      }
+    ]}
+  />
 </Layout>
